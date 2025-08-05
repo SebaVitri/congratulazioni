@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Congratulazioni</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #89f7fe, #66a6ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      animation: bgFade 2s ease-in-out;
+    }
+
+    .card {
+      background-color: #ffffffee;
+      padding: 70px 50px;
+      border-radius: 24px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+      max-width: 600px;
+      width: 90%;
+      animation: fadeIn 0.8s ease-out;
+      backdrop-filter: blur(6px);
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #2d3436;
+      margin-bottom: 30px;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 1.6rem;
+      color: #636e72;
+    }
+
+    strong {
+      color: #0984e3;
+      font-weight: 600;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes bgFade {
+      from {
+        background-position: 0% 50%;
+      }
+      to {
+        background-position: 100% 50%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        padding: 50px 30px;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      p {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>🎉 Congratulazioni, hai vinto!</h1>
+    <p>Recati al punto <strong>[punto]</strong> per il tuo premio.</p>
+  </div>
+</body>
+</html>
